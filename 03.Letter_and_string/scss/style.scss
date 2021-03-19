@@ -8,18 +8,25 @@
 
 body {
   background: url("../img/bg.png");
-.container{
+  font-size: 2rem;
+.container{  
   height: 100vh;
   padding-top: 12.5vh;  
   .centered {
-    width: 50%;
-    height: 50%;
-    text-align: center;
-    border: 2px solid black;
-    margin: auto;
+    padding-left: 40%;
+    text-align: left;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
     vertical-align: middle;
     margin-top: 12.5vh;
-    background: url('../img/block.png');
+    &::first-letter{
+      color: red;
+      font-size: 2.5rem;
+    }
+    .first__string{
+      color: blue;
+    }    
   }
 }
 }
